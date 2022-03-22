@@ -1,9 +1,6 @@
 /*
     g++ drill16.cpp Graph.cpp Window.cpp GUI.cpp Simple_window.cpp -o drill16 `fltk-config --ldflags --use-images`
 */
-// Chapter 16, drill
-// GUI example: line drawing program
-
 #include "Simple_window.h"
 #include "Graph.h"
 
@@ -157,7 +154,7 @@ void Lines_window::cb_quit(Address, Address pw)
 
 void Lines_window::quit()
 {
-    hide(); // FLTK idiom to delete window
+    hide(); 
 }
 
 void Lines_window::cb_next(Address, Address pw)
@@ -172,7 +169,6 @@ void Lines_window::next()
 
     lines.add(Point(x,y));
 
-    // update current position readout:
     ostringstream ss;
     ss << '(' << x << ',' << y << ')';
     xy_out.put(ss.str());
