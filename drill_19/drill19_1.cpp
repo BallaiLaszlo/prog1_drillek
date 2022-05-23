@@ -74,7 +74,7 @@ template<class T> istream& operator>>(istream& is, vector<T>& d)
 }
 
 int main()
-try {
+ {
     
     S<int> s_int(5);
     S<char> s_char('x');
@@ -153,5 +153,5 @@ try {
     cout << "\ns_v_int: ";
     read_val(s_v_int);
     cout << "\ns_v_int: " << s_v_int.get() << "\n";
-
+return 0;
 }
